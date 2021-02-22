@@ -1,0 +1,296 @@
+/* FONTS IMAGE AND TEXT SIZE */
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Eagle+Lake&display=swap');
+
+#cake-wrong-ans,#cat-wrong-ans,#lion-wrong-ans,#truth-wrong-ans,#caterpillar-wrong-ans, #tea-wrong-ans, #gardeners-wrong-ans, #wizard-wrong-ans {
+  color: #b12c24;
+}
+
+body {
+/*  font-family: 'Princess Sofia', cursive;*/
+    font-family: 'Eagle Lake', cursive;
+    margin: 0;
+    background-color: #88c1ff;
+    background-image: url("../../images/background.png");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% 90%;
+    color: #000000;
+    background-attachment: fixed;
+    font-weight: 600;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  font-size: 7vmin;
+}
+
+a {
+  color: white;
+  text-decoration-line: none;
+  font-size: 4vmin;
+}
+
+li {
+  background-color: rgba(0,0,0,0.2);
+  margin: 10px;
+}
+
+button, input{
+  font-size: 4vmin;
+  font-family: inherit;
+  background-color: #3B3B3B;
+  color: white;
+  border-style: none;
+  border-radius: 1vmin;
+  box-shadow: .4vmin .4vmin rgba(0,0,0,0.05);
+  margin: .5vmin;
+}
+
+input[type="button"] {
+    color: #3b3b3b;
+    background-color: #ffffff;
+    border-radius: 100%;
+    border-color: #a8a8a8;
+    border-style: solid;
+    border-width: thin;
+}
+
+input[type="text"] {
+  color: #3b3b3b;
+  background-color: #ffffff;
+  border-color: #a8a8a8;
+  border-style: solid;
+  border-width: thin;
+};
+
+}
+
+td {
+  background-color: #3B3B3B;
+  color: white;
+  border-style: none;
+  border-radius: 1vmin;
+  box-shadow: .4vmin .4vmin rgba(0,0,0,0.05);
+}
+
+p {
+  font-size: 5vmin;
+/*  font-family: 'Mansalva', cursive;*/
+    font-family: 'Alegreya SC', serif;
+  line-height: 1.3;
+  color: #3B3B3B;
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* INTRO RULES */
+
+.intro {
+  display: none;
+  color: #3b3b3b;
+}
+
+/* GRID STYLES AND IMAGES */
+
+.grid-container {
+  grid-template-columns: 20vw 30vw 30vw 20vw;
+  grid-template-rows: 20vh auto auto 20vh;
+  grid-gap: 10px;
+  height: 90vh;
+
+}
+
+/* PROGRESSION RULES */
+
+.grid-container {
+  display: none;
+}
+.grid-container:target {
+  display: grid;
+}
+
+#intro {
+  display: grid;
+}
+
+.solved-riddle, #cake-wrong-ans, #cat-wrong-ans, #lion-wrong-ans, #truth-wrong-ans, #tea-wrong-ans, #caterpillar-wrong-ans, #gardeners-wrong-ans, #wizard-wrong-ans {
+  display: none;
+}
+
+.next-btn {
+  display: block;
+  width: 37%;
+  margin: 10px auto 50px auto;
+  background-color: #c40000;
+   background-image: url("../../images/Glitter_red.gif");  
+    background-repeat: no-repeat;
+    background-size: cover;
+  color: white;
+  border-style: none;
+  border-radius: 1vmin;
+  box-shadow: .4vmin .4vmin rgba(0,0,0,0.05);
+}
+
+.grid-container .solved-riddle {
+  grid-column: 2 / span 2;
+  grid-row: 4;
+  text-align: center;
+}
+
+/*PROGRESSION RULES END */
+/* HINT RULES */
+.hint {
+  display: none;
+}
+/* HINT RULES END */
+
+.mark-top {
+  grid-column: 1;
+  grid-row: 1;
+/*  background: url("../../images/playing_card_q.png") no-repeat;*/
+  background-size: contain;
+  overflow: hidden;
+}
+
+.back-1-4 {
+  grid-column: 4;
+  grid-row: 1;
+  padding-top: 50%;
+  text-align: center;
+}
+
+.back-1-4 a {
+  color: #3b3b3b;
+  background-color: #ffffff;
+  border-radius: 100%;
+  border-color: #a8a8a8;
+  border-style: solid;
+  border-width: thin;
+}
+/*
+
+.picture-1-2 {
+  grid-column: 2;
+  grid-row: 1;
+  background: url("../../images/cake.png") no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  overflow: hidden;
+  z-index: -1;
+  padding-left: 10vw;
+  padding-top: .5vw;
+}
+
+.picture-3-3 {
+  grid-column: 3;
+  grid-row: 1;
+  background: url("../../images/bottle.png") no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  overflow: hidden;
+  z-index: -1;
+  padding-left: 10vw;
+  padding-top: .5vw;
+}
+*/
+
+.mark-bottom {
+  grid-column: 4;
+  grid-row: 4;
+/*  background: url("../../images/playing_card_q.png") no-repeat;*/
+  -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+  background-size: contain;
+  overflow: hidden;
+  z-index: -2;
+}
+
+/*
+.cheshire-cat {
+  background: url("../../images/cat.png") no-repeat;
+}
+
+.alice {
+  background: url("../../images/alice.png") no-repeat;
+}
+
+.tea-time {
+  background: url("../../images/cup.png") no-repeat;
+}
+
+.caterpillar {
+  background: url("../../images/caterpillar.png") no-repeat;
+}
+
+.gardener-red {
+  background: url("../../images/red_pcard.png") no-repeat;
+}
+
+.gardener-black {
+  background: url("../../images/black_pcard.png") no-repeat;
+}
+
+.tweedles {
+  background: url("../../images/tweedle.png") no-repeat;
+}
+
+.rqueen {
+  background: url("../../images/rqueen.png") no-repeat;
+}
+
+.rabbit {
+  background: url("../../images/rabbit.png") no-repeat;
+}
+*/
+
+.contained {
+  background-size: contain;
+  background-origin: content-box;
+  overflow: hidden;
+}
+
+.question {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.answer {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  text-align: center;
+}
+
+td {
+  width: 50%;
+    background-color: #3B3B3B;
+    color: white;
+    border-style: none;
+    border-radius: 1vmin;
+    box-shadow: .4vmin .4vmin rgba(0,0,0,0.05);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1500px) {
+  .picture-1-2 {
+    padding-left: 0vw;
+    padding-top: 5.5vh;
+  }
+
+  .picture-3-3 {
+    padding-left: 17vw;
+    padding-top: 5.5vh;
+    padding-bottom: 2.5vh;
+  }
+}

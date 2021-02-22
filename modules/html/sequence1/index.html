@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <title>We're off to see the Wizard</title>
+   <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Princess+Sofia&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+ </head>
+ <body>
+     
+     
+     
+     
+     
+   <div id="appledir" class="grid-container">
+    <!-- The Crow Puzzle Directions -->
+    <div class="mark-top"></div>
+    <div class="picture-1-2"></div>
+    <div class="question">
+      Directions
+      <p><em>Yellow bricks and ruby shoes,<br>
+          Stairwells on level two, <br>
+          Is where you’ll find your clues<br></em>
+      </p>
+    </div>
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>Go to the Stairwell between level 1 and 2</p>
+        </div>
+        <a class="next-btn" href="#apple">Next</a>
+      </div>
+    <div class="picture-3-3"></div>
+    <div class="mark-bottom"></div>
+   </div>
+   <div id="apple" class="grid-container">
+    <!-- The Crow Puzzle -->
+    <div class="mark-top"></div>
+    <div class="picture-1-2"></div>
+    <div class="question">
+      Glinda the Good Witch
+      <p>From far above you, Glinda the Good Witch descends in a cloud of bubbles, waving her wand. 
+          <br><br>
+ “Oh dear! Are you looking for that sweet little dog? Well I haven’t seen him, but my magic bubbles might be able to tell us who has!”  <br><br>
+          
+Glinda waves her magic wand and the bubbles all dance and swing. Can you read what they show? 
+</p>
+      <p id="cake-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+    </div>
+      <table class="answer">
+        <tbody>
+          <tr>
+            <td><a onclick="validateCake()">Crow</a></td>
+            <td><a onclick="wrongCake()">Penguin</a></td>
+          </tr>
+          <tr>
+            <td><a onclick="wrongCake()">Pidgeon</a></td>
+            <td><a onclick="wrongCake()">Dog</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="solved-riddle" id="cake-yes">
+        <p>A crow! Indeed it is! He will lead you up the stairs and down, through the stacks and round, and show you where the Witch went!</p>
+        <a class="next-btn" href="#bananadir">Next</a>
+      </div>
+    <div class="back-1-4"><a href="#appledir">Back</a></div>
+    <div class="picture-3-3"></div>
+    <div class="mark-bottom"></div>
+  </div>
+     
+     
+     
+     
+     
+     
+  <div id="bananadir" class="grid-container">
+   <!-- The Scarecrow Puzzle Directions -->
+   <div class="mark-top"></div>
+   <div id="chesire-cat" class="picture-1-2 cheshire-cat contained"></div>
+   <div class="question">
+     Directions
+        <p><em>The crow he swoops and swings<br>
+He glides and his dark wings<br>
+The printers at level three<br>
+Is where you will find the next key
+</em></p>
+        <div class="answer">
+          <button type="button" class="collapsible">Hint</button>
+          <div class="hint">
+            <p>Go to the Print and Copy Station on Level 3</p>
+          </div>
+          <a class="next-btn" href="#banana">Next</a>
+        </div>
+   </div>
+   <div class="picture-3-3 cheshire-cat contained"></div>
+   <div class="mark-bottom"></div>
+ </div>
+ <div id="banana" class="grid-container">
+  <!-- The Scarecrow Puzzle -->
+  <div class="mark-top"></div>
+  <div class="picture-1-2 cheshire-cat contained"></div>
+  <div class="question">
+    The Scarecrow
+    <p>The crow lands on the shoulder of the Scarecrow, stuffed with straw and hanging on a pole. 
+        <br><br>
+“Well hello there!” You hear a voice coming from the Scarecrow. “My head is stuffed with straw and I have no brains at all! But the farmer painted these eyes on my head, instead! So if you can solve this little puzzle, I’ll remember where I saw the little dog go!” 
+        <br><br>
+“Letters and numbers, numbers and letters, I get them all confused. Can you decipher this code to uncover the call number?” 
+</p>
+      <p id="cat-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+  </div>
+    <table class="answer">
+      <tbody>
+        <tr>
+          <td><a onclick="wrongCat()">8 2 3 . 4 8 5 4 1</a></td>
+          <td><a onclick="wrongCat()">8 2 3 . 9 1 2 2 1</a></td>
+        </tr>
+        <tr>
+          <td><a onclick="validateCat()">8 1 3 . 5 3 4 7 1</a></td>
+          <td><a onclick="wrongCat()">7 9 1 . 4 3 7 2 1</a></td>
+        </tr>
+        <tr>
+          <td><a onclick="wrongCat()">8 2 2 . 9 1 7 5 1</a></td>
+          <td><a onclick="wrongCat()">8 2 3 . 9 1 2 1 1</a></td>
+        </tr>
+        <tr>
+          <td><a onclick="wrongCat()">7 8 4 . 0 9 2 4 1</a></td>
+          <td><a onclick="wrongCat()">4 2 8 . 6 6 2 6 1</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="solved-riddle" id="cat-yes">
+      <p>“Why, you’re not empty headed at all! You use your brain to think deep thoughts! They should give you a diploma! I saw the Witch come past me with the little dog in tow – she headed into the stacks with him. Perhaps the Tin woodman saw where he went next!”</p>
+      <a class="next-btn" href="#carrotdir">Next</a>
+    </div>
+    <div class="back-1-4"><a href="#bananadir">Back</a></div>
+  <div id="" class="picture-3-3 cheshire-cat contained"></div>
+  <div class="mark-bottom"></div>
+</div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+<div id="carrotdir" class="grid-container">
+ <!-- The Tinman Puzzle Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 tea-time contained"></div>
+ <div class="question">
+   Directions
+   <p><em>Up, up, up the yellow bricks climb<br>
+Your heads bursting with brains, <br>
+813.5 B3471 J2 3<br>
+Is where your next clue will be. </em>
+</p>
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>Go to the bookshelves on level 5 and find the book with the call number 813.5 B3471 J2 3</p>
+        </div>
+        <a class="next-btn" href="#carrot">Next</a>
+      </div>
+ </div>
+ <div class="picture-3-3 tea-time contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+     
+     
+     
+     
+     
+<div id="carrot" class="grid-container">
+<!-- The Tinman puzzle -->
+<div class="mark-top"></div>
+<div class="picture-1-2 tea-time contained"></div>
+<div class="question">
+  The Tinman
+  <p>You see a bright glimmer through the shelves and OH! There’s the Tin Woodman with his axe. <br><br>
+“Well hello there! You are looking for the little dog taken by that wicked witch I hear! My heart may be just sawdust and silk, but heartless I am not. <br>
+Can you help me with this riddle?” <br><br>
+First comes yellow blooms of daisies and sunflowers <br><br>
+The colour of our Emerald city comes last<br><br>
+Second, bulls charge at flags of this colour<br><br>
+Fourth, pink roses and cherry blossoms grow fast<br><br>
+Next, mix the first two together and orange you get<br><br>
+The purple of royalty and plums is all that is left.<br><br>
+</p>
+<p id="tea-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+  <div class="answer">
+  <form name="teaPartyRiddle">
+  Answer: <input id="teaPartyAns" type="text">
+  <input type="button" value="Solve" onclick="validateTeaParty()">
+  </form>
+    <div class="solved-riddle" id="tea-party-yes">
+      <p>“Brains are all very well, but without a heart you can never be happy, and happiness is the best thing in the world! But you are neither a fool nor unhappy, and your heart guides your path. The Witch took little Toto to the Media booths, but I do not know if she is still there!” </p>
+      <a class="next-btn" href="#donutdir">Next</a>
+    </div>
+  </div>
+  <div class="back-1-4"><a href="#carrotdir">Back</a></div>
+<div class="picture-3-3 tea-time contained"></div>
+<div class="mark-bottom"></div>
+</div>
+     
+     
+  
+     
+<div id="donutdir" class="grid-container">
+ <!-- The Lion Puzzle Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 alice contained"></div>
+ <div class="question">
+   Directions
+   <p><em>Shhhh - creep careful through the perilous woods,<br>
+To be caught out here would not be good, <br>
+On level four could be found, <br>
+A quiet place – look on the ground. 
+</em>
+    </p>
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>Go to the Silent study zone on level 4 and look on the ground for the next clue</p>
+        </div>
+        <a class="next-btn" href="#donut">Next</a>
+      </div>
+ </div>
+ <div class="picture-3-3 caterpillar contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+     
+
+<div id="donut" class="grid-container">
+<!-- The Lion Puzzle -->
+<div class="mark-top"></div>
+<div class="picture-1-2 alice contained"></div>
+<div class="question">
+  The Lion
+  <p>ROAR! You hear a great roar and out leaps the Lion, his mane a bristle!<br><br>
+“Who goes there? Is it the Wicked Witch, up to mischief again? No? Ah it is you, brave adventurers! Oh my how courageous you are to face that terrible witch. I am surely too afraid! But if you can be brave and solve this puzzle perhaps I can guide you towards her!<br><br>
+The Munchkins gave me this code, but I cannot understand what I am too do, and I am too afraid to try!”</p>
+    
+    
+    
+    
+    
+    
+   <p id="lion-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+  </div>
+    <table class="answer">
+      <tbody>
+        <tr>
+          <td><a onclick="wrongLion()">Courage</a></td>
+          <td><a onclick="wrongLion()">Fear</a></td>
+        </tr>
+        <tr>
+          <td><a onclick="wrongLion()">Nervous</a></td>
+          <td><a onclick="wrongLion()">Timid</a></td>
+        </tr>
+        <tr>
+          <td><a onclick="validateLion()">Brave</a></td>
+          <td><a onclick="wrongLion()">Valour</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="solved-riddle" id="lion-yes">
+      <p>“Oh my, how brave you are, how bold! For courage is doing what is hard, even when you are scared. The witch has hidden poor Toto away, and I am sure he is terribly afraid. The munchkins say they saw her pass by.”</p>
+      <a class="next-btn" href="#eggplantdir">Next</a>
+    </div>
+    <div class="back-1-4"><a href="#donutdir">Back</a></div>
+<div class="picture-3-3 caterpillar contained"></div>
+  <div class="mark-bottom"></div>
+</div>
+      
+    
+    
+    
+    
+<!--
+  <p id="caterpillar-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+  <div class="answer">
+  <form name="caterpillarRiddle">
+  Answer: <input id="caterpillarAns" type="text">
+  <input type="button" value="Solve" onclick="validateCaterpillar()">
+  </form>
+  <div class="solved-riddle" id="caterpillar-yes">
+    <p>“My riddle thus you have guessed, The Rabbit’s path I will address.” </p>
+    <a class="next-btn" href="#eggplantdir">Next</a>
+  </div>
+  </div>
+  <div class="back-1-4"><a href="#donutdir">Back</a></div>
+<div class="picture-3-3 caterpillar contained"></div>
+<div class="mark-bottom"></div>
+</div>
+     
+-->
+     
+     
+     
+     
+     
+     
+<div id="eggplantdir" class="grid-container">
+ <!-- The Munchkins Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 gardener-red contained"></div>
+ <div class="question">
+   Directions
+   <p><em>Up one flight, <br>
+Within your sight, <br>
+Digital scholars can be seen, <br>
+This is where you must glean,<br>
+The next of clues to solve your plight. 
+</em>
+    </p>
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>Go to the level 5 corridor near the Digital Scholarship Studio</p>
+        </div>
+        <a class="next-btn" href="#eggplant">Next</a>
+      </div>
+ </div>
+ <div class="picture-3-3 gardener-black contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<div id="eggplant" class="grid-container">
+<!-- The Munchkins -->
+<div class="mark-top"></div>
+<div class="picture-1-2 gardener-red contained"></div>
+<div class="question">
+  The Munchkins 
+  <p>“Well hello hello, who are you? My you are quite tall! The little dog you say, kidnapped by the witch! The ponds here are clear and blue and their memory is long. Perhaps you can see which way that wicked witch went? For we have had too much trouble with witches here, and we dare not help you, lest she come back here and cause us grief!”
+   </p>
+  <p id="gardeners-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+  <div class="answer">
+  <form name="gardenersRiddle">
+  Answer: <input id="gardenersAns" type="text">
+  <input class="solve-btn" type="button" value="Solve" onclick="validateGardeners()">
+  </form>
+  <button type="button" class="collapsible">Hint</button>
+  <div class="hint">
+    <p>North, South, East or West. Look for the mirrors to see which way the witch went.</p>
+  </div>
+  <div class="solved-riddle" id="gardeners-yes">
+    <p>“West indeed! For West is where that Wicked Witch lives. But do not go too fast! That Witch is tricky and you will need help to rescue little Toto. Go and ask the Wizard to help you!” </p>
+    <a class="next-btn" href="#fairyflossdir">Next</a>
+  </div>
+  </div>
+  <div class="back-1-4"><a href="#eggplantdir">Back</a></div>
+<div class="picture-3-3 gardener-black contained"></div>
+<div class="mark-bottom"></div>
+</div>
+     
+     
+     
+     
+     
+     
+     
+<div id="fairyflossdir" class="grid-container">
+ <!-- The Wizard Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 tweedles contained"></div>
+ <div class="question">
+   Directions
+   <p><em>To level two, you must go,<br>
+Where art is shown and spaces made, <br>
+The wizard waits for you to know, <br>
+The final puzzle to bring Toto aid. 
+</em>
+    </p>
+<!--
+      <div class="answer">
+        <a class="next-btn" href="#fairyfloss">Next</a>
+      </div>
+-->
+     
+     
+     
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>Go to the Rare Books exhibition space on level 2</p>
+        </div>
+        <a class="next-btn" href="#fairyfloss">Next</a>
+      </div>
+     
+     
+     
+ </div>
+ <div class="picture-3-3 tweedles contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<div id="fairyfloss" class="grid-container">
+<!-- The Wizard -->
+<div class="mark-top"></div>
+<div class="picture-1-2 tweedles contained"></div>
+<div class="question">
+  The Wizard
+  <p>You come at last before the Wizard, Oz the great and powerful. “You have come to ask me for help in finding the little dog Toto, but I never do anything without something in return. First you must tell me of the things you have done to get here. You have seen a great many things on your adventure, but tell me now, what is on the other side of the rainbow?” </p>
+  
+  
+     <p id="wizard-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+  <div class="answer">
+  <form name="wizardRiddle">
+  Answer: <input id="wizardAns" type="text">
+  <input class="solve-btn" type="button" value="Solve" onclick="validateWizard()">
+  </form>
+  <button type="button" class="collapsible">Hint</button>
+  <div class="hint">
+    <p>Spot the coloured letters at each clue stop. Put them in the order of the colours of the rainbow to solve the puzzle!</p>
+  </div>
+  <div class="solved-riddle" id="wizard-yes">
+    <p>“Indeed! The Witch has taken little Toto over the Rainbow to the magical world of Rare Books and Special Collections (RBSC) on Level 1! Hurry along now, and be quiet or the Witch will spot you!” </p>
+    <a class="next-btn" href="#gingerdir">Next</a>
+  </div>
+  </div>
+  <div class="back-1-4"><a href="#fairyflossdir">Back</a></div>
+<div class="picture-3-3 gardener-black contained"></div>
+<div class="mark-bottom"></div>
+</div>
+     
+    
+    
+    
+<!--
+    <p id="truth-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+<table class="answer">
+  <tbody>
+    <tr>
+      <td><a onclick="wrongTruth()">Tweedle Dum</a></td>
+      <td><a onclick="validateTweed()">Tweedle Dee</a></td>
+    </tr>
+    <tr>
+      <td><a onclick="wrongTruth()">The Dormouse</a></td>
+      <td><a onclick="wrongTruth()">None of them</a></td>
+    </tr>
+    <tr>
+      <td><a onclick="wrongTruth()">All of them</a></td>
+      <td><a onclick="wrongTruth()">None and all of them</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="solved-riddle" id="tweed-yes">
+  <p>Tweedle Dum indeed knows where the White Rabbit went. <br><br>
+
+    For as the Hatter said, mice never lie<br>
+    This means the boys were fibbing<br>
+    and if Dee said none of them knew, then at least one of them knew <br>
+    and if Dum said he knew then he didn't know<br>
+    So that leaves Dee and Dormouse. But the truthful Dormouse said he didn't know<br>
+    It must be Tweedle Dum!</p>
+  <a class="next-btn" href="#gingerdir">Next</a>
+</div>
+<div class="back-1-4"><a href="#fairyflossdir">Back</a></div>
+<div class="picture-3-3 tweedles contained"></div>
+<div class="mark-bottom"></div>
+</div>
+     
+-->
+     
+     
+     
+     
+     
+     
+<div id="gingerdir" class="grid-container">
+ <!-- Finish Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 rqueen contained"></div>
+ <div class="question">
+   Directions
+   <p><em>Sneak in quiet as a mouse,<br>
+The witch must not know you’re in the house, <br>
+       Tip toe and don't run,<br>
+       To find Rare Books on level one, <br>   
+Snap a picture of wee Toto’s plight, <br>
+And return to the start to win the fight. <br>
+</em>
+    </p>
+      <div class="answer">
+        <a class="next-btn" href="#ginger">Next</a>
+      </div>
+ </div>
+ <div class="picture-3-3 rabbit contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+     
+     
+     
+     
+ <div id="ginger" class="grid-container">
+ <!-- Finish Instructions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 rqueen contained"></div>
+ <div class="question">
+  You've found Toto!
+   <p> Oh thank you so much, brave people. Your brains are full and your hearts are kind! You’ve saved poor Toto from a dreadful fate – now at last I can click my heels and head home at last, back to Kansas where we belong. <br><br>
+       
+    Take a photo of Toto and show the friendly Library staff in the foyer to get a prize!
+       
+       
+    </p>
+      <div class="answer">
+        <a class="next-btn" href="#ginger2">Finish</a>
+      </div>
+ </div>
+ <div class="picture-3-3 rabbit contained"></div>
+ <div class="mark-bottom"></div>
+</div>    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+<div id="ginger2" class="grid-container">
+ <!-- Finish and Feedback -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 alice contained"></div>
+ <div class="question">
+   Thanks for playing! 
+     
+     <p>We hope you found new knowledge, a safe place to stay and had fun on your jouney – for after all, there’s no place like the Library! <br><br>
+         
+         If you'd like to leave any thanks or advice for improvement, click the link below, we appreciate it.
+    </p>
+      <div class="answer">
+        <a class="next-btn" href="https://sydney.au1.qualtrics.com/jfe/form/SV_9n57scDkBJwHJJ3?module=escape_room_2020">Feedback</a>
+      </div>
+ </div>
+ <div class="back-1-4"><a href="#gingerdir">Back</a></div>
+ <div class="picture-3-3 rabbit contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<script src="../../js/wrong.js"></script>
+ <script src="../../js/collapsible.js"></script>
+ <script src="../../js/validate_cake.js"></script>
+ <script src="../../js/validate_cat.js"></script>
+     <script src="../../js/validate_lion.js"></script>
+ <script src="../../js/validate_tea_party.js"></script>
+ <script src="../../js/validate_caterpillar.js"></script>
+ <script src="../../js/validate_wizard.js"></script>    
+ <script src="../../js/validate_gardeners.js"></script>
+ <script src="../../js/validate_tweed.js"></script>
+ </body>
+</html>

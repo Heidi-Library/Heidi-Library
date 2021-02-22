@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <title>title</title>
+   <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Princess+Sofia&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+ </head>
+ <body>
+   <div id="appledir" class="grid-container">
+    <!-- The Cake Puzzle Directions -->
+    <div class="mark-top"></div>
+    <div class="picture-1-2"></div>
+    <div class="question">
+      Directions
+      <p>4th from the bottom,<br>
+        Where you could make an album,<br>
+        Or film a video,<br>
+        Is where the White Rabbit did go<br><br>
+      </p>
+    </div>
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>The Level 4 Media Booths!</p>
+        </div>
+        <a class="next-btn" href="#apple">Next</a>
+      </div>
+    <div class="picture-3-3"></div>
+    <div class="mark-bottom"></div>
+   </div>
+   <div id="apple" class="grid-container">
+    <!-- The Cake Puzzle -->
+    <div class="mark-top"></div>
+    <div class="picture-1-2"></div>
+    <div class="question">
+      Under the Shelves
+      <p>The white rabbit has disappeared under the shelves, <br>
+        and you’re too big to follow. <br>
+        But you see a small vial on the table that says <br>
+        “Drink me” and a cake that says “Eat me”. <br>
+        One will make you grow smaller and one will make you grow taller.<br> <br>
+
+        Which one do you take?<br>
+		Solve the puzzle to find the answer!</p>
+      <p id="cake-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+    </div>
+      <table class="answer">
+        <tbody>
+          <tr>
+		    <td><a onclick="wrongCake()">Vial</a></td>
+            <td><a onclick="validateCake()">Cake</a></td>
+            
+          </tr>
+          <tr>
+            <td><a onclick="wrongCake()">Neither</a></td>
+            <td><a onclick="wrongCake()">Both</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="solved-riddle" id="cake-yes">
+        <p>You bite into the cake – and suddenly you shrink to 2 feet tall!<br>
+           You follow the White Rabbit under the shelves.<br><br>
+
+          He's nowhere to be found but you find some clues as to where he may have gone...</p>
+        <a class="next-btn" href="#bananadir">Next</a>
+      </div>
+    <div class="back-1-4"><a href="#appledir">Back</a></div>
+    <div class="picture-3-3"></div>
+    <div class="mark-bottom"></div>
+  </div>
+  <div id="bananadir" class="grid-container">
+   <!-- The Cheshire Cat Puzzle Directions -->
+   <div class="mark-top"></div>
+   <div id="chesire-cat" class="picture-1-2 cheshire-cat contained"></div>
+   <div class="question">
+     Directions
+        <p><em>Where papers found and copies made,<br>
+        The White Rabbit’s gone to find some aid.</em></p>
+        <div class="answer">
+          <button type="button" class="collapsible">Hint</button>
+          <div class="hint">
+            <p>Print and Copy Station on Level 3</p>
+          </div>
+          <a class="next-btn" href="#banana">Next</a>
+        </div>
+   </div>
+   <div class="picture-3-3 cheshire-cat contained"></div>
+   <div class="mark-bottom"></div>
+ </div>
+ <div id="banana" class="grid-container">
+  <!-- The Cheshire Cat Puzzle -->
+  <div class="mark-top"></div>
+  <div class="picture-1-2 cheshire-cat contained"></div>
+  <div class="question">
+    The Cheshire Cat
+    <p>The White Rabbit paused by the printers to have a chat with the Cheshire Cat. But Cheshire has all but vanished, leaving nothing but his grin!<br><br>
+
+      “If you don’t know where you’re going, any road can take you there. I can’t know everything – you may have noticed, for me I’m not all there. . .”<br><br>
+      The Cheshire Cat won’t tell you where the White Rabbit’s gone unless you can reveal the rest of him!<br><br>
+
+    Which direction is Cheshire Cat pointing?</p>
+      <p id="cat-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+  </div>
+    <table class="answer">
+      <tbody>
+        <tr>
+          <td><a onclick="wrongCat()">Left</a></td>
+          <td><a onclick="wrongCat()">Right</a></td>
+        </tr>
+        <tr>
+          <td><a onclick="validateCat()">Up</a></td>
+          <td><a onclick="wrongCat()">Down</a></td>
+        </tr>
+        <tr>
+          <td><a onclick="wrongCat()">Inside</a></td>
+          <td><a onclick="wrongCat()">Outside</a></td>
+        </tr>
+        <tr>
+          <td><a onclick="wrongCat()">Nowhere</a></td>
+          <td><a onclick="wrongCat()">None of these</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="solved-riddle" id="cat-yes">
+      <p>You tell the Cheshire Cat he's pointing up<br><br>
+        "In time we go up.." He explains "For downward is backward."<br>
+        "But backward can be upward while downward may be forward"<br><br>
+         With a wiley grin he reveals the next clue before vanishing once more...</p>
+      <a class="next-btn" href="#eggplantdir">Next</a>
+    </div>
+    <div class="back-1-4"><a href="#bananadir">Back</a></div>
+  <div id="" class="picture-3-3 cheshire-cat contained"></div>
+  <div class="mark-bottom"></div>
+</div>
+<div id="carrotdir" class="grid-container">
+ <!-- The Mad Tea Party Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 tea-time contained"></div>
+ <div class="question">
+   Directions
+   <p>You hear laughter from downstairs and someone carrying on:<br><br>
+
+      We’re all mad here! If the Rabbit weren’t too, then he wouldn’t have come here at all!<br><br>
+    Where trinkets and tablets and all things old.<br> Lie in the dust; histories to be foretold.</p>
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>Rare Books and Special Collections, level 1</p>
+        </div>
+        <a class="next-btn" href="#carrot">Next</a>
+      </div>
+ </div>
+ <div class="picture-3-3 tea-time contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<div id="carrot" class="grid-container">
+<!-- The Mad Tea Party -->
+<div class="mark-top"></div>
+<div class="picture-1-2 tea-time contained"></div>
+<div class="question">
+  The Mad Tea Party
+  <p>You come to the Mad Tea party, where the March Hare and the Mad Hatter are sitting at the table.<br><br>
+
+“If you knew Time as well as I do, you wouldn’t talk about wasting it. It’s always tea time here!”<br><br>
+
+The Hatter and the Hare had tea with the White Rabbit, but they won’t tell you where he’s gone unless you solve their riddle!<br><br>
+
+Why is a raven like a writing desk?</p>
+<p id="tea-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+  <div class="answer">
+  <form name="teaPartyRiddle">
+  Answer: <input id="teaPartyAns" type="text">
+  <input type="button" value="Solve" onclick="validateTeaParty()">
+  </form>
+    <div class="solved-riddle" id="tea-party-yes">
+      <p>“E. A. Poe? Is that so?” says the Hatter. "I guess he did write on both! <br>Perhaps we did see the White Rabbit. He was here at tea time...” <br><br>
+
+      "Oh and one more thing... Mice never lie. Otherwise they wouldn't rhyme with Nice!" The hatter chortles louder and resumes the tea party</p>
+      <a class="next-btn" href="#appledir">Next</a>
+    </div>
+  </div>
+  <div class="back-1-4"><a href="#carrotdir">Back</a></div>
+<div class="picture-3-3 tea-time contained"></div>
+<div class="mark-bottom"></div>
+</div>
+<div id="donutdir" class="grid-container">
+ <!-- The Caterpillar Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 alice contained"></div>
+ <div class="question">
+   Directions
+   <p>With a mellow yet slightly condescending voice, you hear a call from the stacks<br><br>
+
+     Six floors up you should go,<br>
+     And look towards the window,<br>
+     Facing west might be best,<br>
+     But look to Eastern ave to find the rest.
+    </p>
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>Go to level six and head towards the front of the library, and look for a window facing Eastern Avenue.</p>
+        </div>
+        <a class="next-btn" href="#donut">Next</a>
+      </div>
+ </div>
+ <div class="picture-3-3 caterpillar contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<div id="donut" class="grid-container">
+<!-- The Caterpillar -->
+<div class="mark-top"></div>
+<div class="picture-1-2 alice contained"></div>
+<div class="question">
+  The Caterpillar
+  <p>The Caterpillar is sitting on his mushroom and smoking as you approach. He turns to you and blows a smoke ring, and asks you:<br><br>
+    “Through the glass, you might see,<br><br>
+    The Answer to these questions three;<br><br>
+    The claws on each Bandersnatch toe,<br><br>
+    The days it takes for a red rose to grow,<br><br>
+    The minutes since the Rabbit passed by me.”<br>
+	Can you see the answer?</p>
+  <p id="caterpillar-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+  <div class="answer">
+  <form name="caterpillarRiddle">
+  Answer: <input id="caterpillarAns" type="text">
+  <input type="button" value="Solve" onclick="validateCaterpillar()">
+  </form>
+  <div class="solved-riddle" id="caterpillar-yes">
+    <p>“My riddle thus you have guessed, The Rabbit’s path I will address.” </p>
+    <a class="next-btn" href="#carrotdir">Next</a>
+  </div>
+  </div>
+  <div class="back-1-4"><a href="#donutdir">Back</a></div>
+<div class="picture-3-3 caterpillar contained"></div>
+<div class="mark-bottom"></div>
+</div>
+<div id="eggplantdir" class="grid-container">
+ <!-- The Gardeners Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 gardener-red contained"></div>
+ <div class="question">
+   Directions
+   <p>Up and down we go,<br><br>
+
+      From low to high and high to low,<br><br>
+
+      But between 1 and 3 we find our quarry<br><br>
+
+      The lifts will lead you through to glory.<br><br>
+    </p>
+      <div class="answer">
+        <button type="button" class="collapsible">Hint</button>
+        <div class="hint">
+          <p>Go to the lift lobby on level 2.</p>
+        </div>
+        <a class="next-btn" href="#eggplant">Next</a>
+      </div>
+ </div>
+ <div class="picture-3-3 gardener-black contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<div id="eggplant" class="grid-container">
+<!-- The Gardeners -->
+<div class="mark-top"></div>
+<div class="picture-1-2 gardener-red contained"></div>
+<div class="question">
+  The Gardeners
+  <p>The Gardeners are busy painting the roses red under the watchful eyes of the Playing Card Guards.<br>
+     You think the White Rabbit came past here, but they want to know which guards are stationed around the library<br>
+     before they tell you where he went. Have you been keeping track of them?<br><br>
+
+     Solve the following problem to find out where the White Rabbit went next!<br><br>
+
+     First come Hearts, beating fast,<br><br>
+
+     Clubs are fierce, put them last,<br><br>
+
+     Second are Spades, running past,<br><br>
+
+     Diamonds third, never outclassed
+   </p>
+  <p id="gardeners-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+  <div class="answer">
+  <form name="gardenersRiddle">
+  Answer: <input id="gardenersAns" type="text">
+  <input class="solve-btn" type="button" value="Solve" onclick="validateGardeners()">
+  </form>
+  <button type="button" class="collapsible">Hint</button>
+  <div class="hint">
+    <p>Four digits you'll need if your path the Gardeners are to lead.</p>
+  </div>
+  <div class="solved-riddle" id="gardeners-yes">
+    <p>“Hoho Hoho! Level 7 you must go! 822.4 B9861! The fun has only just begun!” </p>
+    <a class="next-btn" href="#fairyflossdir">Next</a>
+  </div>
+  </div>
+  <div class="back-1-4"><a href="#eggplantdir">Back</a></div>
+<div class="picture-3-3 gardener-black contained"></div>
+<div class="mark-bottom"></div>
+</div>
+<div id="fairyflossdir" class="grid-container">
+ <!-- Tweedle Dum and Tweedle Dee Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 tweedles contained"></div>
+ <div class="question">
+   Directions
+   <p>The White Rabbit has gone to level 7!<br>
+      Go to call number 822.4 B9861 2 for your final clue!
+    </p>
+      <div class="answer">
+        <a class="next-btn" href="#fairyfloss">Next</a>
+      </div>
+ </div>
+ <div class="picture-3-3 tweedles contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<div id="fairyfloss" class="grid-container">
+<!-- Tweedle Dum and Tweedle Dee -->
+<div class="mark-top"></div>
+<div class="picture-1-2 tweedles contained"></div>
+<div class="question">
+  Tweedle Dum and Tweedle Dee
+  <p>The White Rabbit is already gone!<br>
+    But the Dormouse was with Tweedle Dee and Tweedle Dum when he went past – one of them knows where he went and one of them will tell you who.<br><br>
+
+    Can you work out who to ask where the White Rabbit went?<br><br>
+
+    Tweedle Dum says I know where he went!<br>
+    Tweedle Dee says none of us know where he went so we're not telling you.<br>
+    The Dormouse says, in truth, I don't know where he went. But don't trust those boys they're fibbing!</p>
+  <p id="truth-wrong-ans">"Oh my no! That couldn't possibly be it!"</p>
+</div>
+<table class="answer">
+  <tbody>
+    <tr>
+      <td><a onclick="wrongTruth()">Tweedle Dum</a></td>
+      <td><a onclick="validateTweed()">Tweedle Dee</a></td>
+    </tr>
+    <tr>
+      <td><a onclick="wrongTruth()">The Dormouse</a></td>
+      <td><a onclick="wrongTruth()">None of them</a></td>
+    </tr>
+    <tr>
+      <td><a onclick="wrongTruth()">All of them</a></td>
+      <td><a onclick="wrongTruth()">None and all of them</a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="solved-riddle" id="tweed-yes">
+  <p>Tweedle Dum indeed knows where the White Rabbit went. <br><br>
+
+    For as the Hatter said, mice never lie<br>
+    This means the boys were fibbing<br>
+    and if Dee said none of them knew, then at least one of them knew <br>
+    and if Dum said he knew then he didn't know<br>
+    So that leaves Dee and Dormouse. But the truthful Dormouse said he didn't know<br>
+    It must be Tweedle Dum!</p>
+  <a class="next-btn" href="#gingerdir">Next</a>
+</div>
+<div class="back-1-4"><a href="#fairyflossdir">Back</a></div>
+<div class="picture-3-3 tweedles contained"></div>
+<div class="mark-bottom"></div>
+</div>
+<div id="gingerdir" class="grid-container">
+ <!-- Finish Directions -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 rqueen contained"></div>
+ <div class="question">
+   Directions
+   <p>Tweedle Dee tells you the White Rabbit is in the level 2 exhibition space!<br>
+     When you find him, check the time on his watch.<br>
+     If you can tell the Red Queen what time it says, she won’t chop off your head! Quick!
+    </p>
+      <div class="answer">
+        <a class="next-btn" href="#ginger">Finish</a>
+      </div>
+ </div>
+ <div class="picture-3-3 rabbit contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<div id="ginger" class="grid-container">
+ <!-- Finish and Feedback -->
+ <div class="mark-top"></div>
+ <div class="picture-1-2 alice contained"></div>
+ <div class="question">
+   Thanks for playing! Take the time on the Rabbit's watch back to the start to get your prize!
+   <p>We hope you enjoyed the game.<br><br>
+
+     If you'd like to leave any thanks or advice for improvement, click the link below, we appreciate it.
+    </p>
+      <div class="answer">
+        <a class="next-btn" href="https://sydney.au1.qualtrics.com/jfe/form/SV_9n57scDkBJwHJJ3?module=escape_room_2020">Feedback</a>
+      </div>
+ </div>
+ <div class="back-1-4"><a href="#gingerdir">Back</a></div>
+ <div class="picture-3-3 rabbit contained"></div>
+ <div class="mark-bottom"></div>
+</div>
+<script src="../../js/wrong.js"></script>
+ <script src="../../js/collapsible.js"></script>
+ <script src="../../js/validate_cake.js"></script>
+ <script src="../../js/validate_cat.js"></script>
+ <script src="../../js/validate_tea_party.js"></script>
+ <script src="../../js/validate_caterpillar.js"></script>
+ <script src="../../js/validate_gardeners.js"></script>
+ <script src="../../js/validate_tweed.js"></script>
+ </body>
+</html>
