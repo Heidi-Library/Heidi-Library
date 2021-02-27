@@ -10,14 +10,13 @@ body {
 /*  font-family: 'Princess Sofia', cursive;*/
     font-family: 'Eagle Lake', cursive;
     margin: 0;
-    background-color: #88c1ff;
-    background: url("../../images/background.png") no-repeat center center fixed; 
+    background-color: #ffffff;
+    background: url("../../images/background2.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    color: #000000;
-    background-attachment: fixed;
+    color: #3B3B3B;
     font-weight: 600;
 }
 
@@ -133,9 +132,9 @@ img {
   width: 37%;
   margin: 10px auto 50px auto;
   background-color: #c40000;
-   background-image: url("../../images/Glitter_red.gif");  
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../../images/Glitter_red.gif");  
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   border-style: none;
   border-radius: 1vmin;
@@ -158,10 +157,24 @@ img {
 .mark-top {
   grid-column: 1;
   grid-row: 1;
-/*  background: url("../../images/playing_card_q.png") no-repeat;*/
+  background: url("../../images/wizard_of_oz_lollipop_2.png") no-repeat;
   background-size: contain;
   overflow: hidden;
 }
+
+.mark-bottom {
+  grid-column: 4;
+  grid-row: 4;
+  background: url("../../images/wizard_of_oz_lollipop_1.png") no-repeat;
+/*
+  -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+*/
+  background-size: contain;
+  overflow: hidden;
+  z-index: -2;
+}
+
 
 .back-1-4 {
   grid-column: 4;
@@ -178,12 +191,11 @@ img {
   border-style: solid;
   border-width: thin;
 }
-/*
 
 .picture-1-2 {
   grid-column: 2;
   grid-row: 1;
-  background: url("../../images/cake.png") no-repeat;
+/*  background: url("../../images/cake.png") no-repeat;*/
   background-size: contain;
   background-origin: content-box;
   overflow: hidden;
@@ -195,7 +207,7 @@ img {
 .picture-3-3 {
   grid-column: 3;
   grid-row: 1;
-  background: url("../../images/bottle.png") no-repeat;
+/*  background: url("../../images/bottle.png") no-repeat;*/
   background-size: contain;
   background-origin: content-box;
   overflow: hidden;
@@ -203,56 +215,52 @@ img {
   padding-left: 10vw;
   padding-top: .5vw;
 }
-*/
 
-.mark-bottom {
-  grid-column: 4;
-  grid-row: 4;
-/*  background: url("../../images/playing_card_q.png") no-repeat;*/
-  -webkit-transform:rotate(180deg);
-    -moz-transform:rotate(180deg);
-  background-size: contain;
-  overflow: hidden;
-  z-index: -2;
+
+
+.scarecrow {
+  background: url("../../images/wizard_oz_oz_scarecrow.png") no-repeat;
 }
 
-/*
-.cheshire-cat {
-  background: url("../../images/cat.png") no-repeat;
+.lion {
+  background: url("../../images/wizard_oz_lion.png") no-repeat;
 }
 
-.alice {
-  background: url("../../images/alice.png") no-repeat;
+.munchkin-1 {
+  background: url("../../images/munchkin_1.png") no-repeat;
 }
 
-.tea-time {
-  background: url("../../images/cup.png") no-repeat;
+.munchkin-2 {
+  background: url("../../images/munchkin_2.png") no-repeat;
 }
 
-.caterpillar {
-  background: url("../../images/caterpillar.png") no-repeat;
+.munchkin-3 {
+  background: url("../../images/munchkin_3.png") no-repeat;
 }
 
-.gardener-red {
-  background: url("../../images/red_pcard.png") no-repeat;
+.tin-man {
+  background: url("../../images/tin_man.png") no-repeat;
 }
 
-.gardener-black {
-  background: url("../../images/black_pcard.png") no-repeat;
+.bubbles {
+  background: url("../../images/wizard_of_oz_bubbles.png") no-repeat;
 }
 
-.tweedles {
-  background: url("../../images/tweedle.png") no-repeat;
+.dorothy {
+  background: url("../../images/wizard_of_oz_dorothy.png") no-repeat;
 }
 
-.rqueen {
-  background: url("../../images/rqueen.png") no-repeat;
+.wizard {
+  background: url("../../images/wizard_oz_oz_wizard.png") no-repeat;
 }
 
-.rabbit {
-  background: url("../../images/rabbit.png") no-repeat;
+.glinda {
+  background: url("../../images/wizard_oz_queen-08.png") no-repeat;
 }
-*/
+
+.witch-hat {
+  background: url("../../images/wizard_oz_witch_hat.png") no-repeat;
+}
 
 .contained {
   background-size: contain;
